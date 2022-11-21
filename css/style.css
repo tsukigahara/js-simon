@@ -33,8 +33,11 @@ body {
 
 .mycard {
     width: 100%;
+    max-width: 200px;
+    min-width: 100px;
     aspect-ratio: 1 / 1.5;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: solid 3px rgb(152, 152, 152);
@@ -63,9 +66,24 @@ body {
     font-size: 42px;
 }
 
+.buttonbox {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+}
+
 #timerID {
     display: inline-block;
 }
 .none {
     display: none;
+}
+
+input {
+    width:22%;
+    height: 25%;
+    color: black;
+    font-size: 100%;
+
 }
